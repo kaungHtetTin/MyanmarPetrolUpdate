@@ -1,0 +1,542 @@
+[
+    {
+        "station_id": 1,
+        "Name": "Max",
+        "Phonenumber": "09891755004"
+    },
+    {
+        "station_id": 2,
+        "Name": "Max",
+        "Phonenumber": "09891755002"
+    },
+    {
+        "station_id": 3,
+        "Name": "Max",
+        "Phonenumber": "09891755016"
+    },
+    {
+        "station_id": 4,
+        "Name": "Max",
+        "Phonenumber": "09891755003"
+    },
+    {
+        "station_id": 4,
+        "Name": "Max",
+        "Phonenumber": "01218455"
+    },
+    {
+        "station_id": 5,
+        "Name": "Max",
+        "Phonenumber": "01531181"
+    },
+    {
+        "station_id": 5,
+        "Name": "Max",
+        "Phonenumber": "09891755001"
+    },
+    {
+        "station_id": 6,
+        "Name": "Max",
+        "Phonenumber": "09891755006"
+    },
+    {
+        "station_id": 6,
+        "Name": "Max",
+        "Phonenumber": "01399330"
+    },
+    {
+        "station_id": 7,
+        "Name": "Max",
+        "Phonenumber": "09891755005"
+    },
+    {
+        "station_id": 7,
+        "Name": "Max",
+        "Phonenumber": "01401525"
+    },
+    {
+        "station_id": 8,
+        "Name": "Max",
+        "Phonenumber": "01450767"
+    },
+    {
+        "station_id": 8,
+        "Name": "Max",
+        "Phonenumber": "09891755008"
+    },
+    {
+        "station_id": 9,
+        "Name": "Max",
+        "Phonenumber": "018550750"
+    },
+    {
+        "station_id": 9,
+        "Name": "Max",
+        "Phonenumber": "09891755007"
+    },
+    {
+        "station_id": 10,
+        "Name": "Max",
+        "Phonenumber": "09891755051"
+    },
+    {
+        "station_id": 11,
+        "Name": "Max",
+        "Phonenumber": "09891755015"
+    },
+    {
+        "station_id": 11,
+        "Name": "Max",
+        "Phonenumber": "0185006600"
+    },
+    {
+        "station_id": 12,
+        "Name": "Max",
+        "Phonenumber": "09891755050"
+    },
+    {
+        "station_id": 13,
+        "Name": "Max",
+        "Phonenumber": "09891755014"
+    },
+    {
+        "station_id": 13,
+        "Name": "Max",
+        "Phonenumber": "098636189"
+    },
+    {
+        "station_id": 14,
+        "Name": "Max",
+        "Phonenumber": "09891755009"
+    },
+    {
+        "station_id": 14,
+        "Name": "Max",
+        "Phonenumber": "01637592"
+    },
+    {
+        "station_id": 15,
+        "Name": "Max",
+        "Phonenumber": "09891755012"
+    },
+    {
+        "station_id": 15,
+        "Name": "Max",
+        "Phonenumber": "0973164103"
+    },
+    {
+        "station_id": 16,
+        "Name": "Max",
+        "Phonenumber": "09891755013"
+    },
+    {
+        "station_id": 16,
+        "Name": "Max",
+        "Phonenumber": "01629011"
+    },
+    {
+        "station_id": 17,
+        "Name": "Max",
+        "Phonenumber": null
+    },
+    {
+        "station_id": 18,
+        "Name": "Max",
+        "Phonenumber": "09891755017"
+    },
+    {
+        "station_id": 19,
+        "Name": "Max",
+        "Phonenumber": "09891755018"
+    },
+    {
+        "station_id": 20,
+        "Name": "Max",
+        "Phonenumber": "09891755011"
+    },
+    {
+        "station_id": 21,
+        "Name": "Max",
+        "Phonenumber": "09891755048"
+    },
+    {
+        "station_id": 22,
+        "Name": "Max",
+        "Phonenumber": "09891755175"
+    },
+    {
+        "station_id": 23,
+        "Name": "Max",
+        "Phonenumber": "09891755178"
+    },
+    {
+        "station_id": 24,
+        "Name": "Max",
+        "Phonenumber": "09891755182"
+    },
+    {
+        "station_id": 25,
+        "Name": "Max",
+        "Phonenumber": "09891755046"
+    },
+    {
+        "station_id": 26,
+        "Name": "Denko",
+        "Phonenumber": "09940549225"
+    },
+    {
+        "station_id": 27,
+        "Name": "Denko",
+        "Phonenumber": "09940549238"
+    },
+    {
+        "station_id": 28,
+        "Name": "Denko",
+        "Phonenumber": "09940549230"
+    },
+    {
+        "station_id": 29,
+        "Name": "Denko",
+        "Phonenumber": "09940549241"
+    },
+    {
+        "station_id": 30,
+        "Name": "Denko",
+        "Phonenumber": "09940549231"
+    },
+    {
+        "station_id": 31,
+        "Name": "Denko",
+        "Phonenumber": "09940671409"
+    },
+    {
+        "station_id": 32,
+        "Name": "Denko",
+        "Phonenumber": "09940549234"
+    },
+    {
+        "station_id": 33,
+        "Name": "Denko",
+        "Phonenumber": "09940549236"
+    },
+    {
+        "station_id": 34,
+        "Name": "Denko",
+        "Phonenumber": "09940549235"
+    },
+    {
+        "station_id": 35,
+        "Name": "Denko",
+        "Phonenumber": "09940549353"
+    },
+    {
+        "station_id": 36,
+        "Name": "Denko",
+        "Phonenumber": "09940671412"
+    },
+    {
+        "station_id": 37,
+        "Name": "Denko",
+        "Phonenumber": "09940549242"
+    },
+    {
+        "station_id": 38,
+        "Name": "Denko",
+        "Phonenumber": "09940549226"
+    },
+    {
+        "station_id": 39,
+        "Name": "Denko",
+        "Phonenumber": "09940549227"
+    },
+    {
+        "station_id": 40,
+        "Name": "Denko",
+        "Phonenumber": "09940549228"
+    },
+    {
+        "station_id": 41,
+        "Name": "Denko",
+        "Phonenumber": "09940549229"
+    },
+    {
+        "station_id": 42,
+        "Name": "Denko",
+        "Phonenumber": "09940549239"
+    },
+    {
+        "station_id": 43,
+        "Name": "Denko",
+        "Phonenumber": "09940549240"
+    },
+    {
+        "station_id": 44,
+        "Name": "Denko",
+        "Phonenumber": "09940549233"
+    },
+    {
+        "station_id": 45,
+        "Name": "Denko",
+        "Phonenumber": null
+    },
+    {
+        "station_id": 46,
+        "Name": "360 Degree Petrol",
+        "Phonenumber": "09772558950"
+    },
+    {
+        "station_id": 47,
+        "Name": "361 Degree Petrol",
+        "Phonenumber": "09789366895"
+    },
+    {
+        "station_id": 48,
+        "Name": "362 Degree Petrol",
+        "Phonenumber": "09786409959"
+    },
+    {
+        "station_id": 49,
+        "Name": "363 Degree Petrol",
+        "Phonenumber": "09775117578"
+    },
+    {
+        "station_id": 50,
+        "Name": "364 Degree Petrol",
+        "Phonenumber": "09773043497"
+    },
+    {
+        "station_id": 51,
+        "Name": "365 Degree Petrol",
+        "Phonenumber": "09764610408"
+    },
+    {
+        "station_id": 52,
+        "Name": "366 Degree Petrol",
+        "Phonenumber": "09786387505"
+    },
+    {
+        "station_id": 53,
+        "Name": "MMTM(Myat Myittar Mon)",
+        "Phonenumber": "09420247846"
+    },
+    {
+        "station_id": 53,
+        "Name": "MMTM(Myat Myittar Mon)",
+        "Phonenumber": "09786595336"
+    },
+    {
+        "station_id": 54,
+        "Name": "MMTM(Myat Myittar Mon)",
+        "Phonenumber": "09893310476"
+    },
+    {
+        "station_id": 55,
+        "Name": "MMTM(Myat Myittar Mon)",
+        "Phonenumber": "09798833938"
+    },
+    {
+        "station_id": 56,
+        "Name": "MMTM(Myat Myittar Mon)",
+        "Phonenumber": "09777004234"
+    },
+    {
+        "station_id": 56,
+        "Name": "MMTM(Myat Myittar Mon)",
+        "Phonenumber": "09777004226"
+    },
+    {
+        "station_id": 56,
+        "Name": "MMTM(Myat Myittar Mon)",
+        "Phonenumber": "01537071"
+    },
+    {
+        "station_id": 57,
+        "Name": "MMTM(Myat Myittar Mon)",
+        "Phonenumber": "09788461906"
+    },
+    {
+        "station_id": 58,
+        "Name": "MMTM(Myat Myittar Mon)",
+        "Phonenumber": "09255055565"
+    },
+    {
+        "station_id": 59,
+        "Name": "MMTM(Myat Myittar Mon)",
+        "Phonenumber": "09793758607"
+    },
+    {
+        "station_id": 60,
+        "Name": "New Day",
+        "Phonenumber": "011291904"
+    },
+    {
+        "station_id": 61,
+        "Name": "New Day",
+        "Phonenumber": "01658205"
+    },
+    {
+        "station_id": 62,
+        "Name": "New Day",
+        "Phonenumber": "01290310"
+    },
+    {
+        "station_id": 62,
+        "Name": "New Day",
+        "Phonenumber": "09765421002"
+    },
+    {
+        "station_id": 63,
+        "Name": "New Day",
+        "Phonenumber": "01534997"
+    },
+    {
+        "station_id": 64,
+        "Name": "New Day",
+        "Phonenumber": "018564042"
+    },
+    {
+        "station_id": 64,
+        "Name": "New Day",
+        "Phonenumber": "09765421003"
+    },
+    {
+        "station_id": 65,
+        "Name": "New Day",
+        "Phonenumber": "01564042"
+    },
+    {
+        "station_id": 66,
+        "Name": "PT power",
+        "Phonenumber": "09421068003"
+    },
+    {
+        "station_id": 66,
+        "Name": "PT power",
+        "Phonenumber": "09781593568"
+    },
+    {
+        "station_id": 67,
+        "Name": "PT power",
+        "Phonenumber": "09420031017"
+    },
+    {
+        "station_id": 67,
+        "Name": "PT power",
+        "Phonenumber": "013612778"
+    },
+    {
+        "station_id": 68,
+        "Name": "PT power",
+        "Phonenumber": "09457755008"
+    },
+    {
+        "station_id": 69,
+        "Name": "PT power",
+        "Phonenumber": "09457154781"
+    },
+    {
+        "station_id": 70,
+        "Name": "PT power",
+        "Phonenumber": "09457154780"
+    },
+    {
+        "station_id": 70,
+        "Name": "PT power",
+        "Phonenumber": "09788818913"
+    },
+    {
+        "station_id": 71,
+        "Name": "PT power",
+        "Phonenumber": "09457154791"
+    },
+    {
+        "station_id": 71,
+        "Name": "PT power",
+        "Phonenumber": "09778708801"
+    },
+    {
+        "station_id": 72,
+        "Name": "PT power",
+        "Phonenumber": "09780540598"
+    },
+    {
+        "station_id": 72,
+        "Name": "PT power",
+        "Phonenumber": "09452228385"
+    },
+    {
+        "station_id": 73,
+        "Name": "PT power",
+        "Phonenumber": "01450758"
+    },
+    {
+        "station_id": 74,
+        "Name": "SPB",
+        "Phonenumber": "09740099952"
+    },
+    {
+        "station_id": 75,
+        "Name": "SPB",
+        "Phonenumber": "09740099947"
+    },
+    {
+        "station_id": 76,
+        "Name": "SPB",
+        "Phonenumber": "09740099945"
+    },
+    {
+        "station_id": 77,
+        "Name": "SPB",
+        "Phonenumber": "09740099946"
+    },
+    {
+        "station_id": 78,
+        "Name": "Yangon Petrol(YP)",
+        "Phonenumber": "09683015354"
+    },
+    {
+        "station_id": 79,
+        "Name": "Yangon Petrol(YP)",
+        "Phonenumber": "09966124906"
+    },
+    {
+        "station_id": 80,
+        "Name": "Yangon Petrol(YP)",
+        "Phonenumber": "09966124906"
+    },
+    {
+        "station_id": 81,
+        "Name": "Yangon Petrol(YP)",
+        "Phonenumber": "09423457766"
+    },
+    {
+        "station_id": 82,
+        "Name": "Yangon Petrol(YP)",
+        "Phonenumber": "09692253832"
+    },
+    {
+        "station_id": 83,
+        "Name": "Yangon Petrol(YP)",
+        "Phonenumber": "09966124912"
+    },
+    {
+        "station_id": 83,
+        "Name": "Yangon Petrol(YP)",
+        "Phonenumber": "09448034069"
+    },
+    {
+        "station_id": 84,
+        "Name": "Yangon Petrol(YP)",
+        "Phonenumber": "09966124912"
+    },
+    {
+        "station_id": 1,
+        "Name": "Max",
+        "Phonenumber": "01555292"
+    },
+    {
+        "station_id": 2,
+        "Name": "Max",
+        "Phonenumber": "01532181"
+    }
+]
