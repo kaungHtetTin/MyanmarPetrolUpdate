@@ -1,7 +1,8 @@
 <?php
-require_once 'core/Router.php';
-require_once 'core/Controller.php';
-require_once 'core/Model.php';
+
+require_once 'Core/Router.php';
+require_once 'Core/Controller.php';
+require_once 'Core/Model.php';
 
 spl_autoload_register(function($class) {
     $class = str_replace("\\", "/", $class);
@@ -19,7 +20,7 @@ $router = new Router();
 $requestUri = $_SERVER['REQUEST_URI'];
 // Define your API route prefix
 $apiPrefix = '/petrol/api';
-$webPrefix = "/petrol";
+$webPrefix = "petrol";
 // if (strpos($requestUri, $apiPrefix) === 0) {
 //     $receivedApiKey = $_SERVER['HTTP_X_API_KEY'] ?? '';
 //     $validApiKey = getenv('API_KEY');
@@ -29,6 +30,7 @@ $webPrefix = "/petrol";
 //         exit;
 //     }
 // }
+
 require_once 'Route/api.php';
 require_once 'Route/web.php';
 
