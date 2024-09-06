@@ -124,7 +124,22 @@ class Model
         $query = "INSERT INTO " . $this->table . " ($columns) VALUES ($placeholders)";
         $DB = new Database();
         $stmt = $DB->prepare($query);
-        return $stmt->execute($data);
+
+        // Execute the insert query
+        if ($stmt->execute($data)) {
+            // Get the ID of the newly inserted record
+            $lastId = $DB->lastInsertId();
+
+            // Fetch the newly inserted record by ID
+            $selectQuery = "SELECT * FROM " . $this->table . " WHERE id = :id";
+            $selectStmt = $DB->prepare($selectQuery);
+            $selectStmt->execute(['id' => $lastId]);
+
+            // Return the newly added record
+            return $selectStmt->fetch(PDO::FETCH_ASSOC);
+        }
+
+        return false;  // In case of failure
     }
 
     public function update($whereData, $data)

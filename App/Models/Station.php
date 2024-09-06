@@ -16,8 +16,10 @@
             return $this->hasMany($Phone, 'station_id',$id);
         }
 
-        public function township(){
+        public function township($station){
+            $township_id =  $station['township_id'];
             $Township = new Township;
+            return $this->belongsTo($Township,$township_id);
         }
 
         public function company($station){

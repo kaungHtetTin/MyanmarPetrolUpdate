@@ -12,7 +12,8 @@ class TownshipController extends Controller {
     {
         $Township = new Township;
         $towns = $Township->all();
-        $this->response($towns);
+        $response['townships'] = $towns;
+        $this->response($response);
     }
 
     public function store()
@@ -21,13 +22,13 @@ class TownshipController extends Controller {
         $request = new Request();
 
         $validated = $request->validate([
-            'town'=>'required'
+            'township'=>'required'
         ]);
 
         if(!$validated){
             return $this->error($request->errors());
         }
-        $town = $request->input('town');
+        $town = $request->input('township');
         $Township = new Township;
         $township = ['township'=>$town];
         $result = $Township->create($township);

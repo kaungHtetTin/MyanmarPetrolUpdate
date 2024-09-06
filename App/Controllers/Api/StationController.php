@@ -73,13 +73,36 @@ class StationController extends Controller {
             'township_id'=>'required|numeric',
             'address'=>'required',
             'remark'=>'required',
+            'phone'=>'required',
         ]);
+
+        
         if(!$validate) return $this->error($req->errors());
 
         $Station = new Station();
-        $result = $Station->create($_POST);
-        if($result) return $this->success();
-        else return $this->error("Unexpected Error");
+        $data = [
+            'company_id'=>$req->input('company_id'),
+            'township_id'=>$req->input('township_id'),
+            'address'=>$req->input('address'),
+            'remark'=>$req->input('remark')
+        ];
+        $station = $Station->create($data);
+        $station_id = $station['id'];
+
+        $Phone = new Phone();
+        $Phone->create(['station_id'=>$station_id,'phone'=>$req->input('phone')]);
+
+        $OilType = new OilType;
+        $oil_types = $OilType->all();
+
+        $Information = new Information;
+
+        foreach($oil_types as $type){
+            $oil_type_id = $type['id'];
+            $Information->create(['station_id'=>$station_id,'oil_type_id'=>$oil_type_id]);
+        }
+
+        return $this->success();
 
     }
 

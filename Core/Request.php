@@ -56,7 +56,7 @@ class Request
             $value = $this->input($key);
 
             foreach (explode('|', $ruleSet) as $rule) {
-                if ($rule === 'required' && empty($value)) {
+                if ($rule === 'required' &&  !$this->has($key)) {
                     $this->errors[$key][] = "$key is required.";
                 }
 
