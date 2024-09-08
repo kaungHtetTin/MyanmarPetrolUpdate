@@ -112,7 +112,20 @@ class StationController extends Controller {
         $station = $Station->find($id);
         $station['company'] = $Station->company($station);
 
-        return $this->formatPrint($station);
+        $Information = new Information;
+        $information = $Information->select([
+            'informations.*',
+            'oil_types.type'
+        ])
+        ->join('oil_types','oil_types.id=oil_type_id')
+        ->where(['station_id'=>$id])
+        ->get();
+
+        $station['information'] = $information;
+        $station['phones'] = $Station->phones($id);
+        $station['township'] = $Station->township($station);
+
+        return $this->response($station);
     }
 
     public function update($id)

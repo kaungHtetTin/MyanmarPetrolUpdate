@@ -12,6 +12,7 @@ class PostController extends Controller {
     
     public function index()
     {
+        
         $Post = new Post;
         $req = new Request;
         if($req->has('page')){
@@ -31,6 +32,7 @@ class PostController extends Controller {
 
     public function store()
     {
+        return $this->response(['method'=>'post']);
         $request = new Request();
         $validated = $request->validate([
             'body'=>'required'
@@ -77,6 +79,7 @@ class PostController extends Controller {
     public function update($id)
     {
         $request = new Request();
+        return $this->response(['method'=>'update']);
 
         // $validated = $request->validate([
         //     'town'=>'required'
@@ -89,7 +92,10 @@ class PostController extends Controller {
 
     public function destroy($id)
     {
-       
+        $Post = new Post;
+        $result = $Post->delete(['id'=>$id]);
+        if($result) $this->success();
+        else $this->error("Unexpected Error!");
     }
 
     // Optional methods

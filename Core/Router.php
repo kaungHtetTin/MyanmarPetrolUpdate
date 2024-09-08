@@ -21,7 +21,7 @@ class Router {
         $this->add('POST',$route, $callback.'@store');
         $this->add('GET',$route."/{id}", $callback.'@show');
         $this->add('POST',$route."/{id}", $callback.'@update');
-        $this->add('GET',$route."delete/{id}/", $callback.'@destroy');
+        $this->add('DELETE',$route."/{id}", $callback.'@destroy');
     }
 
     public function get($route, $callback){
