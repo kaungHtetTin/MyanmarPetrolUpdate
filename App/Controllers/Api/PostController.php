@@ -12,7 +12,6 @@ class PostController extends Controller {
     
     public function index()
     {
-        
         $Post = new Post;
         $req = new Request;
         if($req->has('page')){
@@ -32,7 +31,6 @@ class PostController extends Controller {
 
     public function store()
     {
-        return $this->response(['method'=>'post']);
         $request = new Request();
         $validated = $request->validate([
             'body'=>'required'

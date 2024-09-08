@@ -23,6 +23,10 @@ class InformationController extends Controller {
 
     public function show($id)
     {
+        if(!is_numeric($id)){
+            return $this->error("Invalid parameter");
+        }
+
         $Information = new Information();
         $information = $Information->find($id);
         $information['oil_type']= $Information->oilType($information);
@@ -63,6 +67,26 @@ class InformationController extends Controller {
     public function destroy($id)
     {
        
+    }
+
+    public function reset(){
+
+        $request = new Request();
+        $validated = $request->validate([
+            'oil_type_id'=>'required',
+            'available'=>'required'
+        ]);
+
+        if(!$validated){
+            return $this->error($request->errors());
+        }
+        $oil_type_id = $request->input('oil_type_id');
+        $available = $request->input('available');
+        $Information = new Information;
+        $result = $Information->update(['oil_type_id'=>$oil_type_id],['available'=>$available]);
+        if($result) return $this->success();
+        else return $this->error("Unexpected Error");
+
     }
 
     // Optional methods

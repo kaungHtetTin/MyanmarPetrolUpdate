@@ -28,7 +28,9 @@ class DemoController extends Controller {
 
     public function show($id)
     {
-        
+        if(!is_numeric($id)){
+            return $this->error("Invalid parameter");
+        }
     }
 
     public function update($id)
@@ -46,7 +48,9 @@ class DemoController extends Controller {
 
     public function destroy($id)
     {
-       
+        if(!is_numeric($id)){
+            return $this->error("Invalid parameter");
+        }
     }
 
     // Optional methods

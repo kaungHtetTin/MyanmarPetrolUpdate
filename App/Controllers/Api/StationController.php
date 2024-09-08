@@ -110,9 +110,7 @@ class StationController extends Controller {
     {
         $Station =new Station;
         $station = $Station->find($id);
-
-
-
+        
         $station['company'] = $Station->company($station);
 
         $Information = new Information;

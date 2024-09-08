@@ -9,4 +9,6 @@
     $router->apiResource($apiPrefix.'/phones', 'App\Controllers\Api\PhoneController');
     $router->apiResource($apiPrefix."/townships", 'App\Controllers\Api\TownshipController');
     $router->apiResource($apiPrefix.'/posts', 'App\Controllers\Api\PostController');
+
+    $router->post($apiPrefix.'/information-reset', 'App\Controllers\Api\InformationController@reset');
  
