@@ -110,6 +110,9 @@ class StationController extends Controller {
     {
         $Station =new Station;
         $station = $Station->find($id);
+
+
+
         $station['company'] = $Station->company($station);
 
         $Information = new Information;
@@ -124,6 +127,10 @@ class StationController extends Controller {
         $station['information'] = $information;
         $station['phones'] = $Station->phones($id);
         $station['township'] = $Station->township($station);
+
+        $visit = $station['visit'];
+        $visit++;
+        $Station->update(['id'=>$id],['visit'=>$visit]);
 
         return $this->response($station);
     }
