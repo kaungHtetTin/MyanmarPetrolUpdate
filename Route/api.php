@@ -10,5 +10,8 @@
     $router->apiResource($apiPrefix."/townships", 'App\Controllers\Api\TownshipController');
     $router->apiResource($apiPrefix.'/posts', 'App\Controllers\Api\PostController');
 
-    $router->post($apiPrefix.'/information-reset', 'App\Controllers\Api\InformationController@reset');
+    $router->post($apiPrefix.'/information-reset-available', 'App\Controllers\Api\InformationController@reset');
+    $router->post($apiPrefix.'/information-reset-price', 'App\Controllers\Api\InformationController@resetPrice');
+
+    $router->post($apiPrefix.'/stations-open', 'App\Controllers\Api\StationController@open');
  

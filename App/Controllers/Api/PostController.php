@@ -39,7 +39,7 @@ class PostController extends Controller {
             return $this->error($request->errors());
         }
         $body = $request->input("body");
-        $timestamp =time()*1000;
+        $timestamp = time()*1000;
 
         $image_url = "";
 

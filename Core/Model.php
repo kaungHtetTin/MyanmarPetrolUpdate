@@ -145,12 +145,16 @@ class Model
     public function update($whereData, $data)
     {
         $where = "";
-        foreach ($whereData as $key => $value) {
-            $paramKey = ":where_$key";
-            $where .= " $key = $paramKey AND";
-            $this->params[$paramKey] = $value;
+        if($whereData!=null){
+            foreach ($whereData as $key => $value) {
+                $paramKey = ":where_$key";
+                $where .= " $key = $paramKey AND";
+                $this->params[$paramKey] = $value;
+            }
+           
         }
-        $where = substr($where, 0, -3);
+
+        if($where!=="") $where = substr($where, 0, -3);
 
         $set = "";
         foreach ($data as $key => $value) {
@@ -160,7 +164,9 @@ class Model
         }
         $set = substr($set, 0, -1);
 
-        $query = "UPDATE $this->table SET $set WHERE $where";
+        if($where!=="") $query = "UPDATE $this->table SET $set WHERE $where";
+        else $query = "UPDATE $this->table SET $set";
+    
         $DB = new Database();
         $stmt = $DB->prepare($query);
         return $stmt->execute($this->params);

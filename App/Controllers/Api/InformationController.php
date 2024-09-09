@@ -89,6 +89,25 @@ class InformationController extends Controller {
 
     }
 
+    public function resetPrice(){
+        $request = new Request();
+        $validated = $request->validate([
+            'oil_type_id'=>'required|numeric',
+            'price'=>'required|numeric'
+        ]);
+
+        if(!$validated){
+            return $this->error($request->errors());
+        }
+        $oil_type_id = $request->input('oil_type_id');
+        $price = $request->input("price");
+
+        $Information = new Information;
+        $result = $Information->update(['oil_type_id'=>$oil_type_id],['price'=>$price]);
+        if($result) return $this->success();
+        else return $this->error("Unexpected Error");
+    }
+
     // Optional methods
     public function edit($id)
     {

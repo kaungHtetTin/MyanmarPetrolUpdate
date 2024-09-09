@@ -135,12 +135,57 @@ class StationController extends Controller {
 
     public function update($id)
     {
-        
+        $request = new Request();
+
+        $validated = $request->validate([
+            'description'=>'required',
+            'address'=>'required',
+            'remark'=>'required',
+            'open'=>'required|numeric'
+        ]);
+
+        if(!$validated){
+            return $this->error($request->errors());
+        }
+
+        $address = $request->input('address');
+        $remark = $request->input('remark');
+        $description = $request->input('description');
+        $open = $request->input('open');
+        $updated_at =  time()*1000; 
+
+        $Station =new Station;
+        $result = $Station->update(['id'=>$id],['address'=>$address,
+            'remark'=>$remark,'description'=>$description,'open'=>$open,'updated_at'=>$updated_at]);
+        if($result) return $this->success();
+        else return $this->error("Unexpected Error");
     }
 
     public function destroy($id)
     {
-       
+       $Station = new Station;
+       $result = $Station->delete(['id'=>$id]);
+       if($result) $this->success();
+        else $this->error("Unexpected Error!");
+    }
+
+    public function open(){
+        $request = new Request();
+        $validated = $request->validate([
+            'open'=>'required|numeric'
+        ]);
+
+        if(!$validated){
+            return $this->error($request->errors());
+        }
+
+        $open = $request->input("open");
+
+        $Station = new Station();
+        $result = $Station->update(null,['open'=>$open]);
+
+        if($result) $this->success();
+        else $this->error("Unexpected Error!");
     }
 
     // Optional methods
