@@ -21,15 +21,15 @@ $requestUri = $_SERVER['REQUEST_URI'];
 // Define your API route prefix
 $apiPrefix = '/petrol/api';
 $webPrefix = "petrol";
-// if (strpos($requestUri, $apiPrefix) === 0) {
-//     $receivedApiKey = $_SERVER['HTTP_X_API_KEY'] ?? '';
-//     $validApiKey = getenv('API_KEY');
-//     if ($receivedApiKey !== $validApiKey) {
-//         http_response_code(401);
-//         echo json_encode(["message" => "Unauthorized"]);
-//         exit;
-//     }
-// }
+if (strpos($requestUri, $apiPrefix) === 0) {
+    $receivedApiKey = $_SERVER['HTTP_X_API_KEY'] ?? '';
+    $validApiKey = getenv('API_KEY');
+    if ($receivedApiKey !== $validApiKey) {
+        http_response_code(401);
+        echo json_encode(["message" => "Unauthorized"]);
+        exit;
+    }
+}
 
 require_once 'Route/api.php';
 require_once 'Route/web.php';

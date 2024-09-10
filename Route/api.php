@@ -9,6 +9,7 @@
     $router->apiResource($apiPrefix.'/phones', 'App\Controllers\Api\PhoneController');
     $router->apiResource($apiPrefix."/townships", 'App\Controllers\Api\TownshipController');
     $router->apiResource($apiPrefix.'/posts', 'App\Controllers\Api\PostController');
+    $router->apiResource($apiPrefix.'/settings', 'App\Controllers\Api\SettingController');
 
     $router->post($apiPrefix.'/information-reset-available', 'App\Controllers\Api\InformationController@reset');
     $router->post($apiPrefix.'/information-reset-price', 'App\Controllers\Api\InformationController@resetPrice');
