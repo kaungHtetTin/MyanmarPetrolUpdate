@@ -59,7 +59,15 @@ class InformationController extends Controller {
         $available = $request->input('available');
 
         $Information = new Information;
+
+        $information = $Information->find($id);
+        $station_id = $information['station_id'];
+        
+        $Station =new Station;
+        $updated_at =  time()*1000; 
+        $Station->update(['id'=>$station_id],['updated_at'=>$updated_at]);
         $result = $Information->update(['id'=>$id],['price'=>$price,'available'=>$available]);
+        
         if($result) return $this->success();
         else return $this->error("Unexpected Error");
     }
