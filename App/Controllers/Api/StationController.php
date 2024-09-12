@@ -34,6 +34,7 @@ class StationController extends Controller {
         ])
         ->join('companies','companies.id=company_id')
         ->join('townships','townships.id=township_id')
+        ->orderBy(['updated_at'=>'DESC'])
         ->get();
 
 
